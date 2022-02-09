@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改留言</title>
+</head>
+<body>
+    <center>
+        <table>
+            <form action='/update' method='post'>
+                <tr>
+                    <td>ID：</td>
+                    <td><input type='int' name='id' readonly="readonly" value={{data.id}}><br></td>
+                </tr>
+                <tr>
+                    <td>昵称：</td>
+                    <td><input type='text' name='nickname' readonly="readonly" value={{data.nickname}}><br></td>
+                </tr>
+                <tr>
+                    <td>留言信息：</td>
+                    <td>
+                        <textarea name='info' id='' cols='30' rows='10'>{{data.info}}</textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><button>修改</button></th>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+</html>

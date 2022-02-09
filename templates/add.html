@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加留言</title>
+</head>
+<body>
+    <center>
+        <table>
+            <form action='/insert' method='post'>
+                <tr>
+                    <td>昵称：</td>
+                    <td><input type='text' name='nickname'><br></td>
+                </tr>
+                <tr>
+                    <td>留言信息：</td>
+                    <td>
+                        <textarea name='info' id='' cols='30' rows='10'>请留下你的信息。</textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2"><button>添加</button></th>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+</html>
